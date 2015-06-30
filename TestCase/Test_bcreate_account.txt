@@ -1,0 +1,14 @@
+*** Settings ***
+Library  ../GestorMyAccount/MyAccount.py
+Library  ../GestorMyAccount/CreateAccount.py
+
+*** Test Cases ***
+Crate new account
+
+    select a link of my account menu  Register
+    
+    create new account  wilder1  cossio  wilder1.cossio@gmail.com  123456!@#  123456!@#
+    
+    click register
+    
+    validate if the My Dashboard page is displayed  wilder1  cossio

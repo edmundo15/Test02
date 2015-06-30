@@ -1,0 +1,15 @@
+*** Settings ***
+Documentation  Bare Bones Test Suite
+
+Library  Singleton/SetUp.py
+
+
+Suite Setup  Setup
+Suite Teardown  Teardown
+
+*** Keywords ***
+Setup
+    Open browser
+
+Teardown
+    Close browser

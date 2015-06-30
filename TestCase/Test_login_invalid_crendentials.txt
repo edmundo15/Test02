@@ -1,0 +1,15 @@
+*** Settings ***
+Library  ../GestorMyAccount/MyAccount.py
+
+
+*** Test Cases ***
+Login-Invalid crendentials
+    [Documentation]  Login-Invalid crendentials: Verify that the 'Invalid crendentials' is displayed when settings incorrect user or password.            
+    
+    Select a link of my account menu  My Account
+    
+    Set account crendetials  edmundo.cossio1@gmail.com  123!@#pass
+    
+    Click login
+    
+    Validate if the invalid credentialsMSG is displayed
