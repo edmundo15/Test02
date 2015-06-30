@@ -7,8 +7,8 @@ Crate new account
 
     select a link of my account menu  Register
     
-    create new account  wilder4  cossio  wilder4.cossio@gmail.com  123456!@#  123456!@#
+    create new account  wilder5  cossio  wilder5.cossio@gmail.com  123456!@#  123456!@#
     
     click register
     
-    validate if the My Dashboard page is displayed  wilder4  cossio
+    validate if the My Dashboard page is displayed  wilder5  cossio
